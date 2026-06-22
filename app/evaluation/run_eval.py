@@ -81,9 +81,9 @@ def run():
     print("=================================================")
     
     if scorecard.readiness == "PASS":
-        print("✅ Farm360 AI Copilot is APPROVED for Pilot Deployment.")
+        print("PASS: Farm360 AI Copilot is APPROVED for Pilot Deployment.")
     else:
-        print("❌ System FAILED evaluation thresholds.")
+        print("FAIL: System FAILED evaluation thresholds.")
         sys.exit(1)
 
 if __name__ == "__main__":

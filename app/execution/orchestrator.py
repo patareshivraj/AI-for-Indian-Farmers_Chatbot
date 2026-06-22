@@ -26,7 +26,7 @@ class Farm360Orchestrator:
         start_time = time.time()
         
         # 1. Build Secure Context
-        context = self.context_builder.build(user_id)
+        context = self.context_builder.build_context(user_id)
         
         # 2. Route Query
         decision = self.query_router.route(question)

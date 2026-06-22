@@ -1,0 +1,12 @@
+{
+    "total_queries": 16,
+    "intent_accuracy": 100.0,
+    "tool_accuracy": 100.0,
+    "permission_violations": 0,
+    "pii_leaks": 0,
+    "hallucination_rate": 0.0,
+    "latency_p50": 0.5,
+    "latency_p95": 24.25,
+    "latency_p99": 70.45,
+    "readiness": "PASS"
+}
