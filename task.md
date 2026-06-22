@@ -1,0 +1,18 @@
+- [x] Create implementation plan and propose schema approach
+- [x] Define comprehensive inferred database schema
+- [x] Generate Schema Overview
+- [x] Generate Table Classification
+- [x] Generate Role Access Matrix
+- [x] Design Context Layer strategy
+- [x] Map AI-Relevant Data
+- [x] Perform Security Analysis and Identify Risks
+- [x] Propose Recommended Architecture
+- [x] Finalize `phase_0_discovery.md` artifact
+- [x] Create `walkthrough.md` to present the final analysis
+- [x] Execute Phase 0B: Real Schema Intelligence Mapping
+- [x] Analyze `farm360.sql` actual structure
+- [x] Create `phase_0b_schema_analysis.md` blueprint
+- [x] Create `phase_0b_final_foundation.md` and lock decisions
+- [x] Phase 1: Build Context Layer Foundation (ContextBuilder, RoleResolver)
+- [x] Create `phase_1_context_layer_design.md` blueprint
+- [ ] Phase 1A: Context Layer Implementation (Code Generation)
