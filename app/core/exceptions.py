@@ -17,3 +17,7 @@ class RepositoryError(Exception):
 class ContextBuilderError(Exception):
     """Raised when context building fails."""
     pass
+
+class MemorySecurityError(Exception):
+    """Raised when PII or Secrets are attempted to be written to memory."""
+    pass
