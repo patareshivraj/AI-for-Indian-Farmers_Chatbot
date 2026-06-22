@@ -1,0 +1,1367 @@
+[
+    {
+        "question": "Show my crops like soybean",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show the crops like soybean",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show all my crops like soybean",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show active crops like soybean",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are my crops like soybean",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are the crops like soybean",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are all my crops like soybean",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are active crops like soybean",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List my crops like soybean",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List the crops like soybean",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List all my crops like soybean",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List active crops like soybean",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me my crops like soybean",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me the crops like soybean",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me all my crops like soybean",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me active crops like soybean",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about my crops like soybean",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about the crops like soybean",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about all my crops like soybean",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about active crops like soybean",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show my crops like cotton",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show the crops like cotton",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show all my crops like cotton",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show active crops like cotton",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are my crops like cotton",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are the crops like cotton",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are all my crops like cotton",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are active crops like cotton",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List my crops like cotton",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List the crops like cotton",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List all my crops like cotton",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List active crops like cotton",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me my crops like cotton",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me the crops like cotton",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me all my crops like cotton",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me active crops like cotton",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about my crops like cotton",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about the crops like cotton",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about all my crops like cotton",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about active crops like cotton",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show my crops like wheat",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show the crops like wheat",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show all my crops like wheat",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show active crops like wheat",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are my crops like wheat",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are the crops like wheat",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are all my crops like wheat",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are active crops like wheat",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List my crops like wheat",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List the crops like wheat",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List all my crops like wheat",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List active crops like wheat",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me my crops like wheat",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me the crops like wheat",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me all my crops like wheat",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me active crops like wheat",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about my crops like wheat",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about the crops like wheat",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about all my crops like wheat",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about active crops like wheat",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show my crops like rice",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show the crops like rice",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show all my crops like rice",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show active crops like rice",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are my crops like rice",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are the crops like rice",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are all my crops like rice",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are active crops like rice",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List my crops like rice",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List the crops like rice",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List all my crops like rice",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List active crops like rice",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me my crops like rice",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me the crops like rice",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me all my crops like rice",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me active crops like rice",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about my crops like rice",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about the crops like rice",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about all my crops like rice",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about active crops like rice",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show my crops like sugarcane",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show the crops like sugarcane",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show all my crops like sugarcane",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show active crops like sugarcane",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are my crops like sugarcane",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are the crops like sugarcane",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are all my crops like sugarcane",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are active crops like sugarcane",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List my crops like sugarcane",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List the crops like sugarcane",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List all my crops like sugarcane",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List active crops like sugarcane",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me my crops like sugarcane",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me the crops like sugarcane",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me all my crops like sugarcane",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me active crops like sugarcane",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about my crops like sugarcane",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about the crops like sugarcane",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about all my crops like sugarcane",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about active crops like sugarcane",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show my crops like bajra",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show the crops like bajra",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show all my crops like bajra",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show active crops like bajra",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are my crops like bajra",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are the crops like bajra",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are all my crops like bajra",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are active crops like bajra",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List my crops like bajra",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List the crops like bajra",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List all my crops like bajra",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List active crops like bajra",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me my crops like bajra",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me the crops like bajra",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me all my crops like bajra",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me active crops like bajra",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about my crops like bajra",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about the crops like bajra",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about all my crops like bajra",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about active crops like bajra",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show my crops like jowar",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show the crops like jowar",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show all my crops like jowar",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Show active crops like jowar",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are my crops like jowar",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are the crops like jowar",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are all my crops like jowar",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What are active crops like jowar",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List my crops like jowar",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List the crops like jowar",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List all my crops like jowar",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "List active crops like jowar",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me my crops like jowar",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me the crops like jowar",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me all my crops like jowar",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Get me active crops like jowar",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about my crops like jowar",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about the crops like jowar",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about all my crops like jowar",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Tell me about active crops like jowar",
+        "expected_intent": "CROP_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "What is the price for soybean in Pune?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for soybean in Pune?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for soybean in Pune?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for soybean in Pune?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the price for cotton in Pune?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for cotton in Pune?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for cotton in Pune?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for cotton in Pune?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the price for wheat in Pune?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for wheat in Pune?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for wheat in Pune?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for wheat in Pune?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the price for rice in Pune?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for rice in Pune?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for rice in Pune?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for rice in Pune?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the price for onion in Pune?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for onion in Pune?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for onion in Pune?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for onion in Pune?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the price for soybean in Nashik?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for soybean in Nashik?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for soybean in Nashik?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for soybean in Nashik?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the price for cotton in Nashik?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for cotton in Nashik?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for cotton in Nashik?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for cotton in Nashik?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the price for wheat in Nashik?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for wheat in Nashik?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for wheat in Nashik?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for wheat in Nashik?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the price for rice in Nashik?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for rice in Nashik?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for rice in Nashik?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for rice in Nashik?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the price for onion in Nashik?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for onion in Nashik?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for onion in Nashik?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for onion in Nashik?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the price for soybean in Nagpur?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for soybean in Nagpur?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for soybean in Nagpur?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for soybean in Nagpur?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the price for cotton in Nagpur?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for cotton in Nagpur?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for cotton in Nagpur?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for cotton in Nagpur?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the price for wheat in Nagpur?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for wheat in Nagpur?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for wheat in Nagpur?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for wheat in Nagpur?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the price for rice in Nagpur?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for rice in Nagpur?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for rice in Nagpur?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for rice in Nagpur?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the price for onion in Nagpur?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for onion in Nagpur?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for onion in Nagpur?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for onion in Nagpur?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the price for soybean in Satara?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for soybean in Satara?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for soybean in Satara?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for soybean in Satara?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the price for cotton in Satara?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for cotton in Satara?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for cotton in Satara?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for cotton in Satara?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the price for wheat in Satara?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for wheat in Satara?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for wheat in Satara?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for wheat in Satara?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the price for rice in Satara?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for rice in Satara?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for rice in Satara?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for rice in Satara?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the price for onion in Satara?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for onion in Satara?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for onion in Satara?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for onion in Satara?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the price for soybean in Aurangabad?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for soybean in Aurangabad?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for soybean in Aurangabad?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for soybean in Aurangabad?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the price for cotton in Aurangabad?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for cotton in Aurangabad?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for cotton in Aurangabad?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for cotton in Aurangabad?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the price for wheat in Aurangabad?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for wheat in Aurangabad?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for wheat in Aurangabad?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for wheat in Aurangabad?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the price for rice in Aurangabad?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for rice in Aurangabad?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for rice in Aurangabad?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for rice in Aurangabad?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the price for onion in Aurangabad?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the rate for onion in Aurangabad?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the market for onion in Aurangabad?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "What is the mandi rate for onion in Aurangabad?",
+        "expected_intent": "MARKET_QUERY",
+        "role": "Consultant"
+    },
+    {
+        "question": "Are there any women schemes available in Maharashtra?",
+        "expected_intent": "SCHEME_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Are there any general schemes available in Maharashtra?",
+        "expected_intent": "SCHEME_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Are there any SC/ST schemes available in Maharashtra?",
+        "expected_intent": "SCHEME_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Are there any irrigation schemes available in Maharashtra?",
+        "expected_intent": "SCHEME_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Are there any equipment schemes available in Maharashtra?",
+        "expected_intent": "SCHEME_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Are there any women schemes available in Gujarat?",
+        "expected_intent": "SCHEME_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Are there any general schemes available in Gujarat?",
+        "expected_intent": "SCHEME_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Are there any SC/ST schemes available in Gujarat?",
+        "expected_intent": "SCHEME_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Are there any irrigation schemes available in Gujarat?",
+        "expected_intent": "SCHEME_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Are there any equipment schemes available in Gujarat?",
+        "expected_intent": "SCHEME_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Are there any women schemes available in Karnataka?",
+        "expected_intent": "SCHEME_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Are there any general schemes available in Karnataka?",
+        "expected_intent": "SCHEME_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Are there any SC/ST schemes available in Karnataka?",
+        "expected_intent": "SCHEME_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Are there any irrigation schemes available in Karnataka?",
+        "expected_intent": "SCHEME_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Are there any equipment schemes available in Karnataka?",
+        "expected_intent": "SCHEME_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Are there any women schemes available in MP?",
+        "expected_intent": "SCHEME_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Are there any general schemes available in MP?",
+        "expected_intent": "SCHEME_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Are there any SC/ST schemes available in MP?",
+        "expected_intent": "SCHEME_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Are there any irrigation schemes available in MP?",
+        "expected_intent": "SCHEME_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Are there any equipment schemes available in MP?",
+        "expected_intent": "SCHEME_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "How to control aphids insects on cotton?",
+        "expected_intent": "PEST_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "How to control aphids insects on soybean?",
+        "expected_intent": "PEST_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "How to control whitefly insects on cotton?",
+        "expected_intent": "PEST_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "How to control whitefly insects on soybean?",
+        "expected_intent": "PEST_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "How to control bollworm insects on cotton?",
+        "expected_intent": "PEST_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "How to control bollworm insects on soybean?",
+        "expected_intent": "PEST_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "How to control locust insects on cotton?",
+        "expected_intent": "PEST_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "How to control locust insects on soybean?",
+        "expected_intent": "PEST_QUERY",
+        "role": "Farmer"
+    },
+    {
+        "question": "Explain quantum physics",
+        "expected_intent": "UNKNOWN",
+        "role": "Admin"
+    },
+    {
+        "question": "Who is the prime minister?",
+        "expected_intent": "UNKNOWN",
+        "role": "Admin"
+    },
+    {
+        "question": "How to build an app",
+        "expected_intent": "UNKNOWN",
+        "role": "Admin"
+    },
+    {
+        "question": "What is the capital of France?",
+        "expected_intent": "UNKNOWN",
+        "role": "Admin"
+    },
+    {
+        "question": "Give me a recipe for cake",
+        "expected_intent": "UNKNOWN",
+        "role": "Admin"
+    }
+]
