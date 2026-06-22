@@ -43,6 +43,12 @@ class ToolRegistry:
             requires_farmer_context=False,
             requires_assignment_validation=False
         ),
+        ToolName.GET_WEATHER: ToolMetadata(
+            name=ToolName.GET_WEATHER,
+            category=ToolCategory.DATABASE,
+            requires_farmer_context=False,
+            requires_assignment_validation=False
+        ),
         ToolName.SEARCH_SCHEMES: ToolMetadata(
             name=ToolName.SEARCH_SCHEMES,
             category=ToolCategory.SCHEME,
@@ -51,6 +57,36 @@ class ToolRegistry:
         ),
         ToolName.GET_KNOWLEDGE_BASE: ToolMetadata(
             name=ToolName.GET_KNOWLEDGE_BASE,
+            category=ToolCategory.KNOWLEDGE,
+            requires_farmer_context=False,
+            requires_assignment_validation=False
+        ),
+        ToolName.GET_DISEASE_INFO: ToolMetadata(
+            name=ToolName.GET_DISEASE_INFO,
+            category=ToolCategory.KNOWLEDGE,
+            requires_farmer_context=False,
+            requires_assignment_validation=False
+        ),
+        ToolName.GET_PEST_INFO: ToolMetadata(
+            name=ToolName.GET_PEST_INFO,
+            category=ToolCategory.KNOWLEDGE,
+            requires_farmer_context=False,
+            requires_assignment_validation=False
+        ),
+        ToolName.GET_FERTILIZER_INFO: ToolMetadata(
+            name=ToolName.GET_FERTILIZER_INFO,
+            category=ToolCategory.KNOWLEDGE,
+            requires_farmer_context=False,
+            requires_assignment_validation=False
+        ),
+        ToolName.GET_SOIL_HEALTH_INFO: ToolMetadata(
+            name=ToolName.GET_SOIL_HEALTH_INFO,
+            category=ToolCategory.KNOWLEDGE,
+            requires_farmer_context=False,
+            requires_assignment_validation=False
+        ),
+        ToolName.GET_FARMING_TIPS: ToolMetadata(
+            name=ToolName.GET_FARMING_TIPS,
             category=ToolCategory.KNOWLEDGE,
             requires_farmer_context=False,
             requires_assignment_validation=False

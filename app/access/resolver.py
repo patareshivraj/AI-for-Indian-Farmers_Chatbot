@@ -20,8 +20,14 @@ class ToolAccessResolver:
                 ToolName.GET_MY_ACTIVE_CROPS,
                 ToolName.GET_MY_INVENTORY,
                 ToolName.GET_MARKET_PRICES,
+                ToolName.GET_WEATHER,
                 ToolName.SEARCH_SCHEMES,
-                ToolName.GET_KNOWLEDGE_BASE
+                ToolName.GET_KNOWLEDGE_BASE,
+                ToolName.GET_DISEASE_INFO,
+                ToolName.GET_PEST_INFO,
+                ToolName.GET_FERTILIZER_INFO,
+                ToolName.GET_SOIL_HEALTH_INFO,
+                ToolName.GET_FARMING_TIPS
             ]
             accessible_farmer_ids = [context.user.user_id]
             
@@ -30,7 +36,12 @@ class ToolAccessResolver:
                 ToolName.GET_ASSIGNED_FARMER_SUMMARY,
                 ToolName.GET_MARKET_PRICES,
                 ToolName.SEARCH_SCHEMES,
-                ToolName.GET_KNOWLEDGE_BASE
+                ToolName.GET_KNOWLEDGE_BASE,
+                ToolName.GET_DISEASE_INFO,
+                ToolName.GET_PEST_INFO,
+                ToolName.GET_FERTILIZER_INFO,
+                ToolName.GET_SOIL_HEALTH_INFO,
+                ToolName.GET_FARMING_TIPS
             ]
             accessible_farmer_ids = context.assignments.authorized_farmer_ids
             
@@ -39,7 +50,12 @@ class ToolAccessResolver:
                 ToolName.GET_PLATFORM_STATISTICS,
                 ToolName.GET_MARKET_PRICES,
                 ToolName.SEARCH_SCHEMES,
-                ToolName.GET_KNOWLEDGE_BASE
+                ToolName.GET_KNOWLEDGE_BASE,
+                ToolName.GET_DISEASE_INFO,
+                ToolName.GET_PEST_INFO,
+                ToolName.GET_FERTILIZER_INFO,
+                ToolName.GET_SOIL_HEALTH_INFO,
+                ToolName.GET_FARMING_TIPS
             ]
             
         blocked_tools = [t for t in all_tools if t not in allowed_tools]
