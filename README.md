@@ -221,9 +221,14 @@ app/
 ├── router/         # Semantic Intent Extraction
 ├── benchmark/      # Red-Teaming and Load Testing Scripts
 └── observability/  # Metrics, Tracing, PII Sanitization
-docs/               # Architectural Specifications
+docs/
+├── architecture/   # System Architecture, Security, API Contracts, and Handoff Docs
+├── design-history/ # Phase discovery, schema analysis, and historical plans
+├── audits/         # Final repository, mock, and security audits
+└── evidence/       # JSON evidence traces and infrastructure reports
+scripts/            # Maintenance utilities, DB testing, and evidence generation
 tests/              # E2E and Unit Verification
-verify_infrastructure.py  # Validation Probes
+evaluation/         # Evaluation Framework
 ```
 
 ---

@@ -1,9 +1,0 @@
-{
-    "Model_Name": "llama-3.3-70b-versatile",
-    "Provider_Name": "Groq",
-    "Request_Timestamp": "2026-06-23T05:23:06.638105",
-    "Response_Timestamp": "2026-06-23T05:23:07.560355",
-    "Latency_ms": 922,
-    "Token_Usage": 193,
-    "Fallback_Used": false
-}

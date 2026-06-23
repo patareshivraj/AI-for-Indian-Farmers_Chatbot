@@ -13,3 +13,17 @@ venv.bak/
 
 # Pytest
 .pytest_cache/
+
+# Logs and DB
+*.log
+*.sqlite
+
+# Generated Audit Reports and Verification Artifacts
+live_data_trace.json
+database_verification.json
+groq_verification.json
+evidence_package.md
+mock_audit.md
+repository_audit.md
+security_verification.md
+live_infrastructure_report.md
