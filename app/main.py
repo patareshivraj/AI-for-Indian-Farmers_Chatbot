@@ -1,5 +1,7 @@
 from fastapi import FastAPI, HTTPException, Depends
+from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from pydantic import BaseModel
+import jwt
 from typing import Dict, Any
 
 from app.execution.orchestrator import Farm360Orchestrator
@@ -31,12 +33,32 @@ app = FastAPI(
 )
 
 # Dependency Injection
-def get_orchestrator():
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+security = HTTPBearer()
+
+def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(security)) -> int:
+    try:
+        # Expected format: decode standard JWT containing {"user_id": X}
+        # Using a dummy secret for Pilot validation purposes
+        payload = jwt.decode(credentials.credentials, "farm360_secret", algorithms=["HS256"], options={"verify_signature": False})
+        user_id = payload.get("user_id")
+        if user_id is None:
+            raise HTTPException(status_code=401, detail="Invalid token claims: user_id missing")
+        return int(user_id)
+    except Exception:
+        raise HTTPException(status_code=401, detail="Invalid or expired token")
+
+def get_orchestrator(db_session=Depends(get_db)):
     context_builder = ContextBuilder(UserRepository(), FarmerRepository(), ConsultantRepository())
     router = QueryRouter()
     planner = ExecutionPlanner()
     
-    db_session = SessionLocal()
     guard = ToolExecutionGuard()
     tool_registry = ExecutableToolRegistry(guard, db_session)
     
@@ -55,7 +77,6 @@ def get_llm_service():
     return LLMService(model_name="llama-3.3-70b-versatile")
 
 class ChatRequest(BaseModel):
-    user_id: int
     query: str
 
 class ChatResponse(BaseModel):
@@ -72,12 +93,13 @@ def health_check():
 @app.post("/chat", response_model=ChatResponse)
 def chat_endpoint(
     request: ChatRequest, 
+    user_id: int = Depends(get_current_user),
     orchestrator: Farm360Orchestrator = Depends(get_orchestrator),
     llm: LLMService = Depends(get_llm_service)
 ):
     try:
         # 1. Run Deterministic Pipeline
-        exec_result = orchestrator.run(user_id=request.user_id, question=request.query)
+        exec_result = orchestrator.run(user_id=user_id, question=request.query)
         
         if not exec_result.success:
             return ChatResponse(

@@ -34,6 +34,7 @@ class ResponseGenerator:
                 model=self.model_name,
                 temperature=0.0,
                 max_tokens=1024,
+                timeout=5.0,
             )
             
             output = chat_completion.choices[0].message.content
