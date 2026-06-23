@@ -1,0 +1,22 @@
+[
+  {
+    "query": "सोयाबीनसाठी कोणती योजना आहे?",
+    "expected_intent": "SCHEME_QUERY",
+    "language": "mr"
+  },
+  {
+    "query": "कापसावर whitefly नियंत्रण कसे करावे?",
+    "expected_intent": "PEST_QUERY",
+    "language": "mr"
+  },
+  {
+    "query": "मुझे सोयाबीन के बाजार भाव बताओ",
+    "expected_intent": "MARKET_QUERY",
+    "language": "hi"
+  },
+  {
+    "query": "What is the weather in Pune?",
+    "expected_intent": "WEATHER_QUERY",
+    "language": "en"
+  }
+]

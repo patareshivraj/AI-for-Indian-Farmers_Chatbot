@@ -1,0 +1,42 @@
+[
+  {
+    "user_id": 30001,
+    "role": "ADMIN",
+    "name": "Test ADMIN 0",
+    "state": "Maharashtra",
+    "district": "Pune",
+    "language": "mr"
+  },
+  {
+    "user_id": 30002,
+    "role": "ADMIN",
+    "name": "Test ADMIN 1",
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "language": "hi"
+  },
+  {
+    "user_id": 30003,
+    "role": "ADMIN",
+    "name": "Test ADMIN 2",
+    "state": "Maharashtra",
+    "district": "Nagpur",
+    "language": "en"
+  },
+  {
+    "user_id": 30004,
+    "role": "ADMIN",
+    "name": "Test ADMIN 3",
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "language": "en"
+  },
+  {
+    "user_id": 30005,
+    "role": "ADMIN",
+    "name": "Test ADMIN 4",
+    "state": "Maharashtra",
+    "district": "Pune",
+    "language": "hi"
+  }
+]

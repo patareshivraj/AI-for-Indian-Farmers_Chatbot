@@ -1,0 +1,14 @@
+[
+  {
+    "query": "Should I plant soybean next month?",
+    "expected_intent": "CROP_PLANNING_QUERY"
+  },
+  {
+    "query": "Am I eligible for any scheme?",
+    "expected_intent": "SCHEME_ELIGIBILITY_QUERY"
+  },
+  {
+    "query": "How is my farm performing?",
+    "expected_intent": "FARM_HEALTH_QUERY"
+  }
+]

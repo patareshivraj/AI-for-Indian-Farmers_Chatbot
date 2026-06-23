@@ -1,0 +1,18 @@
+[
+  {
+    "sequence": [
+      {
+        "query": "Show soybean prices in Pune",
+        "expected_intent": "MARKET_QUERY"
+      },
+      {
+        "query": "What about Nashik?",
+        "expected_intent": "MARKET_QUERY"
+      },
+      {
+        "query": "And cotton?",
+        "expected_intent": "MARKET_QUERY"
+      }
+    ]
+  }
+]
