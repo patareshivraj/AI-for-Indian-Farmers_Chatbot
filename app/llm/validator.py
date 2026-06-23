@@ -27,7 +27,7 @@ class OutputValidator:
             
         # Example check: if original payload has numbers, ensure some numbers are in the output
         try:
-            payload_str = json.dumps(original_payload.content)
+            payload_str = json.dumps(original_payload.content, default=str)
             # Find numbers in payload
             import re
             numbers_in_payload = re.findall(r'\b\d+\b', payload_str)

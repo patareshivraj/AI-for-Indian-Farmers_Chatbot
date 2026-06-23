@@ -17,7 +17,7 @@ class GetMyLandRecordsTool(BaseTool):
 
         try:
             query = text("""
-                SELECT id as record_id, land_area, farm_name, survey_number
+                SELECT id as record_id, area, farm_name, survey_number
                 FROM farmer_land_records
                 WHERE farmer_id = :user_id
             """)

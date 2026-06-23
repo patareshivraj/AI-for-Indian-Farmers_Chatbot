@@ -19,7 +19,7 @@ class GroundingGuard:
             
         # 3. Reject oversized payloads
         try:
-            payload_str = json.dumps(payload.content)
+            payload_str = json.dumps(payload.content, default=str)
             if len(payload_str) > self.MAX_PAYLOAD_SIZE_CHARS:
                 return False
         except Exception:

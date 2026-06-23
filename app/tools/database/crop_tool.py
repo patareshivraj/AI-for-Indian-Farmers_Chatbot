@@ -16,7 +16,7 @@ class GetMyActiveCropsTool(BaseTool):
 
         try:
             query = text("""
-                SELECT id as crop_record_id, crop_name, date_of_sowing, expected_harvest_date, land_id
+                SELECT id as crop_record_id, crop_name, plantation_date, expected_plantation_date, land_id
                 FROM farmer_crop_details
                 WHERE farmer_id = :user_id AND is_crop_planted = 1
             """)

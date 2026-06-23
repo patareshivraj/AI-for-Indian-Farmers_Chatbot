@@ -17,7 +17,7 @@ class GetDiseaseInfoTool(BaseTool):
         crop_name = kwargs.get("crop_name")
 
         try:
-            query_str = "SELECT disease_name, symptoms, prevention_methods, treatment FROM disease_awareness WHERE 1=1"
+            query_str = "SELECT disease_name, symptoms, prevention, treatment FROM disease_awareness WHERE 1=1"
             params = {}
             if disease_name:
                 query_str += " AND disease_name LIKE :disease_name"

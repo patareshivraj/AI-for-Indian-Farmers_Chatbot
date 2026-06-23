@@ -16,7 +16,7 @@ class ResponseGenerator:
     def generate(self, request: LLMRequest) -> LLMResponse:
         """Calls the Groq LLM."""
         system_prompt = Prompts.SYSTEM_PROMPT.format(tone=request.tone)
-        payload_str = json.dumps(request.response_payload.content, ensure_ascii=False)
+        payload_str = json.dumps(request.response_payload.content, ensure_ascii=False, default=str)
         user_prompt = Prompts.USER_PROMPT.format(payload=payload_str, language=request.language.value)
         
         try:

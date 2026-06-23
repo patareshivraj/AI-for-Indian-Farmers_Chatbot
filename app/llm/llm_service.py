@@ -50,6 +50,7 @@ class LLMService:
             
         except Exception as e:
             # Catch Gemini/OpenAI network errors, rate limits, or validation failures
+            print(f"LLM Generation Exception: {e}")
             return self._handle_fallback(payload, start_time, str(e))
             
     def _handle_fallback(self, payload: ResponsePayload, start_time: float, reason: str) -> LLMResponse:
