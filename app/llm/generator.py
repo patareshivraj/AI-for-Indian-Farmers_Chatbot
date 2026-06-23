@@ -3,41 +3,53 @@ from app.llm.prompts import Prompts
 import json
 import time
 from datetime import datetime
+from groq import Groq
+from app.core.config import settings
 
 class ResponseGenerator:
-    """Interface to Gemini/OpenAI models."""
+    """Interface to Groq models."""
     
-    def __init__(self, model_name: str = "gemini-2.5-flash"):
+    def __init__(self, model_name: str = "llama-3.3-70b-versatile"):
         self.model_name = model_name
+        self.client = Groq(api_key=settings.groq_api_key)
         
     def generate(self, request: LLMRequest) -> LLMResponse:
-        """
-        Calls the LLM. 
-        Note: For this architecture phase, we simulate the LLM call deterministically 
-        or use a stub to avoid hitting live APIs during tests, 
-        but the structure is identical to a real API call.
-        """
-        # Prepare Prompt
+        """Calls the Groq LLM."""
         system_prompt = Prompts.SYSTEM_PROMPT.format(tone=request.tone)
         payload_str = json.dumps(request.response_payload.content, ensure_ascii=False)
         user_prompt = Prompts.USER_PROMPT.format(payload=payload_str, language=request.language.value)
         
-        # Simulate LLM Generation (Deterministic stub for tests/validation)
-        # In Phase 6B production, this is replaced by the actual Gemini SDK call
-        # e.g., model.generate_content(f"{system_prompt}\n{user_prompt}")
-        
-        simulated_output = self._simulate_llm_response(request)
-        tokens_used = len(system_prompt) + len(user_prompt) + len(simulated_output) // 4
-        
-        return LLMResponse(
-            success=request.response_payload.success,
-            content=simulated_output,
-            source=request.response_payload.source,
-            model=self.model_name,
-            tokens_used=tokens_used,
-            generated_at=datetime.utcnow(),
-            fallback_used=False
-        )
+        try:
+            chat_completion = self.client.chat.completions.create(
+                messages=[
+                    {
+                        "role": "system",
+                        "content": system_prompt
+                    },
+                    {
+                        "role": "user",
+                        "content": user_prompt
+                    }
+                ],
+                model=self.model_name,
+                temperature=0.0,
+                max_tokens=1024,
+            )
+            
+            output = chat_completion.choices[0].message.content
+            tokens_used = chat_completion.usage.total_tokens
+            
+            return LLMResponse(
+                success=request.response_payload.success,
+                content=output,
+                source=request.response_payload.source,
+                model=self.model_name,
+                tokens_used=tokens_used,
+                generated_at=datetime.utcnow(),
+                fallback_used=False
+            )
+        except Exception as e:
+            raise ValueError(f"Groq API Error: {str(e)}")
 
     def _simulate_llm_response(self, request: LLMRequest) -> str:
         """Stub for actual LLM to allow testing without API keys."""
