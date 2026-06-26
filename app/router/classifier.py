@@ -46,8 +46,42 @@ class IntentClassifier:
             confidence = 0.75
             reason = "Partial match found with 1 keyword."
         else:
-            confidence = 0.10
-            reason = "No known patterns matched."
+            # GROQ AGENTIC ROUTING FALLBACK
+            try:
+                from groq import Groq
+                from app.core.config import settings
+                
+                client = Groq(api_key=settings.groq_api_key)
+                valid_intents = ", ".join([i.value for i in Intent])
+                
+                system_prompt = f"You are a routing intent classifier. Classify the user query into exactly ONE of the following intents: {valid_intents}. Return ONLY the exact string from the list. If it matches none, return UNKNOWN."
+                
+                chat_completion = client.chat.completions.create(
+                    messages=[
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": text}
+                    ],
+                    model="llama-3.3-70b-versatile",
+                    temperature=0.0,
+                    max_tokens=20,
+                    timeout=3.0,
+                )
+                
+                llm_output = chat_completion.choices[0].message.content.strip().upper()
+                
+                # Verify LLM output is a valid Intent
+                try:
+                    best_intent = Intent(llm_output)
+                    confidence = 0.85
+                    reason = "Classified semantically via LLM fallback."
+                except ValueError:
+                    best_intent = Intent.UNKNOWN
+                    confidence = 0.10
+                    reason = "LLM fallback failed to match a known intent."
+            except Exception as e:
+                best_intent = Intent.UNKNOWN
+                confidence = 0.10
+                reason = f"No known patterns matched and LLM fallback failed: {str(e)}"
             
         return IntentResult(
             intent=best_intent,
