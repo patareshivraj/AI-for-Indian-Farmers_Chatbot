@@ -22,6 +22,7 @@ class ToolResolver:
         Intent.SOIL_HEALTH_QUERY: ToolName.GET_SOIL_HEALTH_INFO,
         
         Intent.FARMING_TIPS_QUERY: ToolName.GET_FARMING_TIPS,
+        Intent.CHITCHAT_QUERY: ToolName.CHITCHAT_TOOL,
         
         # Admin / Consultant specific mapped out of generic query if needed,
         # but the intent classification handles it.

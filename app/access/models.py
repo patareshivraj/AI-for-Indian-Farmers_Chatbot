@@ -29,6 +29,7 @@ class ToolName(str, Enum):
     
     GET_ASSIGNED_FARMER_SUMMARY = "GET_ASSIGNED_FARMER_SUMMARY"
     GET_PLATFORM_STATISTICS = "GET_PLATFORM_STATISTICS"
+    CHITCHAT_TOOL = "CHITCHAT_TOOL"
 
 class ToolAccessProfile(BaseModel):
     model_config = ConfigDict(extra="forbid")

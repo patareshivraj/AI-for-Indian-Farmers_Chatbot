@@ -90,6 +90,8 @@ class ChatResponse(BaseModel):
 def health_check():
     return {"status": "ok", "version": "1.0.0"}
 
+from app.core.guardrails import validate_input_guardrails, check_rate_limit
+
 @app.post("/chat", response_model=ChatResponse)
 def chat_endpoint(
     request: ChatRequest, 
@@ -98,6 +100,10 @@ def chat_endpoint(
     llm: LLMService = Depends(get_llm_service)
 ):
     try:
+        # 0. Execute Pre-Flight Guardrails
+        check_rate_limit(user_id)
+        validate_input_guardrails(request.query)
+
         # 1. Run Deterministic Pipeline
         exec_result = orchestrator.run(user_id=user_id, question=request.query)
         

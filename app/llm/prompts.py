@@ -12,6 +12,7 @@ CRITICAL RULES:
 5. You are strictly FORBIDDEN from using external knowledge.
 6. Write in the requested language.
 7. Maintain a {tone} tone.
+8. If the payload is empty ({}), DO NOT say "out of scope". Instead, politely inform the user that no matching records were found in their database profile.
 """
 
     USER_PROMPT = """Data Payload:

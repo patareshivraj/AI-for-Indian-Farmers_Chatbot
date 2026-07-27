@@ -1,87 +1,63 @@
-import re
-from typing import List, Tuple
+from typing import List
 from app.router.intents import Intent
 from app.router.models import IntentResult
+from groq import Groq
+from app.core.config import settings
+import logging
+
+logger = logging.getLogger(__name__)
 
 class IntentClassifier:
-    """Classifies natural language text into deterministic Intents using rule-based and semantic matching."""
+    """Classifies natural language text into deterministic Intents using 100% Semantic LLM Routing."""
 
     def __init__(self):
-        # Multilingual keyword mappings (English, Hindi, Marathi)
-        self.intent_patterns: List[Tuple[Intent, List[str]]] = [
-            (Intent.CROP_QUERY, ["crop", "crops", "फसल", "पिके", "planted"]),
-            (Intent.MARKET_QUERY, ["price", "prices", "market", "भाव", "दर", "rate", "mandi", "मंडी"]),
-            (Intent.SCHEME_QUERY, ["scheme", "schemes", "yojana", "योजना", "subsidy", "subsidies"]),
-            (Intent.PEST_QUERY, ["pest", "aphid", "aphids", "insects", "कीट", "कीड", "whitefly"]),
-            (Intent.DISEASE_QUERY, ["disease", "wilt", "blight", "sick", "रोग", "आजारी"]),
-            (Intent.WEATHER_QUERY, ["weather", "rain", "temperature", "forecast", "मौसम", "हवामान", "पाऊस"]),
-            (Intent.LAND_QUERY, ["land", "records", "farm area", "acres", "जमीन", "जमिनीचा"]),
-            (Intent.INVENTORY_QUERY, ["inventory", "stock", "instock", "godown", "साठा"]),
-            (Intent.PROFILE_QUERY, ["profile", "my details", "account", "प्रोफाइल"]),
-            (Intent.FERTILIZER_QUERY, ["fertilizer", "urea", "dap", "खत", "उर्वरक"]),
-            (Intent.SOIL_HEALTH_QUERY, ["soil", "health", "ph level", "माती", "मिट्टी"]),
-            (Intent.FARMING_TIPS_QUERY, ["tip", "tips", "advice", "सल्ला", "सुझाव", "calendar"]),
-        ]
+        # We instantiate the client once here to reuse the connection
+        self.client = Groq(api_key=settings.groq_api_key)
+        
+        # We explicitly list all valid intents so the LLM knows the strict boundaries
+        self.valid_intents = ", ".join([i.value for i in Intent])
+        
+        self.system_prompt = (
+            "You are Farm360's semantic intent router. Your job is to read the user's agricultural query "
+            "and classify it into exactly ONE of the following intents: {}. "
+            "CRITICAL RULES: "
+            "1. You MUST return ONLY the exact uppercase string of the matched intent. "
+            "2. If the user asks about multiple things (e.g., 'crops disease'), pick the most critical or specific intent (DISEASE_QUERY is more specific than CROP_QUERY). "
+            "3. If the user is just saying hi, bye, or thanks, pick CHITCHAT_QUERY. "
+            "4. If it matches none of these, return UNKNOWN."
+        ).format(self.valid_intents)
 
     def classify(self, text: str) -> IntentResult:
-        """Analyzes text and returns the most confident IntentResult."""
-        text_lower = text.lower()
+        """Analyzes text semantically via Groq LLM and returns the IntentResult."""
         
-        best_intent = Intent.UNKNOWN
-        max_matches = 0
-        
-        for intent, keywords in self.intent_patterns:
-            matches = sum(1 for kw in keywords if re.search(r'\b' + re.escape(kw) + r'\b', text_lower))
-            # Also check substring for non-latin scripts (Hindi/Marathi)
-            matches += sum(1 for kw in keywords if kw in text_lower and not kw.isascii())
+        try:
+            chat_completion = self.client.chat.completions.create(
+                messages=[
+                    {"role": "system", "content": self.system_prompt},
+                    {"role": "user", "content": text}
+                ],
+                model="llama-3.3-70b-versatile",
+                temperature=0.0,
+                max_tokens=20,
+                timeout=4.0,
+            )
             
-            if matches > max_matches:
-                max_matches = matches
-                best_intent = intent
-                
-        if max_matches >= 2:
-            confidence = 0.95
-            reason = f"Strong match found with {max_matches} keywords."
-        elif max_matches == 1:
-            confidence = 0.75
-            reason = "Partial match found with 1 keyword."
-        else:
-            # GROQ AGENTIC ROUTING FALLBACK
+            llm_output = chat_completion.choices[0].message.content.strip().upper()
+            
             try:
-                from groq import Groq
-                from app.core.config import settings
-                
-                client = Groq(api_key=settings.groq_api_key)
-                valid_intents = ", ".join([i.value for i in Intent])
-                
-                system_prompt = f"You are a routing intent classifier. Classify the user query into exactly ONE of the following intents: {valid_intents}. Return ONLY the exact string from the list. If it matches none, return UNKNOWN."
-                
-                chat_completion = client.chat.completions.create(
-                    messages=[
-                        {"role": "system", "content": system_prompt},
-                        {"role": "user", "content": text}
-                    ],
-                    model="llama-3.3-70b-versatile",
-                    temperature=0.0,
-                    max_tokens=20,
-                    timeout=3.0,
-                )
-                
-                llm_output = chat_completion.choices[0].message.content.strip().upper()
-                
-                # Verify LLM output is a valid Intent
-                try:
-                    best_intent = Intent(llm_output)
-                    confidence = 0.85
-                    reason = "Classified semantically via LLM fallback."
-                except ValueError:
-                    best_intent = Intent.UNKNOWN
-                    confidence = 0.10
-                    reason = "LLM fallback failed to match a known intent."
-            except Exception as e:
+                best_intent = Intent(llm_output)
+                confidence = 0.95
+                reason = "Classified semantically via primary LLM Router."
+            except ValueError:
                 best_intent = Intent.UNKNOWN
                 confidence = 0.10
-                reason = f"No known patterns matched and LLM fallback failed: {str(e)}"
+                reason = f"LLM returned an invalid intent string: {llm_output}"
+                
+        except Exception as e:
+            logger.error(f"LLM Routing failed: {str(e)}")
+            best_intent = Intent.UNKNOWN
+            confidence = 0.0
+            reason = f"LLM Routing system error: {str(e)}"
             
         return IntentResult(
             intent=best_intent,

@@ -14,7 +14,8 @@ class DatabaseAgent(BaseAgent):
         Intent.CROP_QUERY,
         Intent.INVENTORY_QUERY,
         Intent.WEATHER_QUERY,
-        Intent.MARKET_QUERY
+        Intent.MARKET_QUERY,
+        Intent.CHITCHAT_QUERY
     }
 
     def __init__(self, tool_registry: ExecutableToolRegistry):

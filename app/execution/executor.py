@@ -38,7 +38,7 @@ class ExecutionEngine:
                     success=False,
                     intent=plan.intent,
                     tool_name=plan.tool_name,
-                    error=f"Engine execution failure: {str(e)}",
+                    error="An internal system error occurred. Please try again later.",
                     execution_time_ms=0
                 )
                 

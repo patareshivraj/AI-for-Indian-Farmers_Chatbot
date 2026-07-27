@@ -15,6 +15,7 @@ class ToolAccessResolver:
         
         if isinstance(context, FarmerContext):
             allowed_tools = [
+                ToolName.CHITCHAT_TOOL,
                 ToolName.GET_MY_PROFILE,
                 ToolName.GET_MY_LAND_RECORDS,
                 ToolName.GET_MY_ACTIVE_CROPS,
@@ -33,6 +34,7 @@ class ToolAccessResolver:
             
         elif isinstance(context, ConsultantContext):
             allowed_tools = [
+                ToolName.CHITCHAT_TOOL,
                 ToolName.GET_ASSIGNED_FARMER_SUMMARY,
                 ToolName.GET_MARKET_PRICES,
                 ToolName.SEARCH_SCHEMES,
@@ -47,6 +49,7 @@ class ToolAccessResolver:
             
         elif isinstance(context, AdminContext):
             allowed_tools = [
+                ToolName.CHITCHAT_TOOL,
                 ToolName.GET_PLATFORM_STATISTICS,
                 ToolName.GET_MARKET_PRICES,
                 ToolName.SEARCH_SCHEMES,

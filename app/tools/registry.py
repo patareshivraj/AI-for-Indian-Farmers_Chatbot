@@ -17,11 +17,13 @@ from app.tools.knowledge.soil_health_tool import GetSoilHealthInfoTool
 from app.tools.knowledge.farming_tips_tool import GetFarmingTipsTool
 
 from app.tools.schemes.scheme_search_tool import SchemeSearchTool
+from app.tools.general.chitchat_tool import ChitChatTool
 
 class ExecutableToolRegistry:
     """Registry that instantiates executable tools."""
     
     _tool_classes: Dict[ToolName, Type[BaseTool]] = {
+        ToolName.CHITCHAT_TOOL: ChitChatTool,
         ToolName.GET_MY_PROFILE: GetMyProfileTool,
         ToolName.GET_MY_LAND_RECORDS: GetMyLandRecordsTool,
         ToolName.GET_MY_ACTIVE_CROPS: GetMyActiveCropsTool,
